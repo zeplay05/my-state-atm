@@ -1,0 +1,129 @@
+/* ตั้งค่าพื้นฐาน */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* พื้นหลัง */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px;
+  font-weight: 400;
+}
+
+/* สไตล์ของ Alert */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background-color: #f44336; /* สีพื้นหลังของ Alert */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.alert:hover {
+  transform: scale(1.02);
+}
+
+/* กำหนดสไตล์ให้กับส่วนหัว */
+header {
+  background-color: #0056b3;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 1.9rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* สไตล์ของปุ่ม */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* กล่องคอนเทนต์ */
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.container:hover {
+  transform: translateY(-8px);
+}
+
+/* เพิ่มสไตล์ให้กับ input */
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background-color 0.3s;
+  background-color: #fff;
+}
+
+input[type="number"]:focus {
+  border-color: #0056b3;
+  background-color: #eaf1fc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* สไตล์ของประวัติการถอน */
+.withdraw-history {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.withdraw-history-item {
+  background-color: #e7f5e5;
+  border: 1px solid #d3e6d1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.withdraw-history-item:hover {
+  background-color: #d1f0d1;
+}
+
+.withdraw-history-empty {
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+}
